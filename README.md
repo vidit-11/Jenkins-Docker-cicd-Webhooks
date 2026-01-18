@@ -124,8 +124,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
 2. **Jenkinsfile**
-
-'''groovy
+```groovy
 pipeline {
     agent { label 'docker-agent' } 
     environment {
@@ -164,4 +163,6 @@ pipeline {
         }
     }
 }
+
+
 ```
