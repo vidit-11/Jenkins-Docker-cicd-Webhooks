@@ -110,7 +110,7 @@ Create the following files in the root of your repository:
 # --- Stage 1: Build & Test ---
 FROM maven:3.9.6-eclipse-temurin-17-alpine AS build
 WORKDIR /app
-# Copy pom.xml and download dependencies (cached layer)
+# Copy pom.xml and download dependencies 
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
